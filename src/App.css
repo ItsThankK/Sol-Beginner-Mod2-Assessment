@@ -30,7 +30,26 @@
 
 .buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+button {margin: 20px;}
+
+h2 {color: mediumaquamarine;}
+
+.btn-create:hover {
+background-color: aquamarine;
+opacity: 0.4;
+}
+.btn-connect:hover {
+background-color: #282c34;
+color: #fff;
+}
+.btn-disconnect:hover {
+background-color: red;
+}
+.btn-transfer:hover {
+background-color: gold;
 }
 
 @keyframes App-logo-spin {

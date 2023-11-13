@@ -211,9 +211,9 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Module 2 Assessment</h2>
+        <h2>My DApp</h2>
         <span className ="buttons">
-          <button
+          <button className='btn-create'
             style={{
               fontSize: "16px",
               padding: "15px",
@@ -225,7 +225,7 @@ export default function App() {
             Create a New Solana Account
           </button>
           {provider && !receiverPublicKey && (
-            <button
+            <button className='btn-connect'
               style={{
                 fontSize: "16px",
                 padding: "15px",
@@ -239,7 +239,7 @@ export default function App() {
           )}
           {provider && receiverPublicKey && (
             <div>
-              <button
+              <button className='btn-disconnect'
                 style={{
                   fontSize: "16px",
                   padding: "15px",
@@ -256,7 +256,7 @@ export default function App() {
             </div>
           )}
           {provider && receiverPublicKey && senderKeypair && (
-          <button
+          <button className='btn-transfer'
             style={{
               fontSize: "16px",
               padding: "15px",
